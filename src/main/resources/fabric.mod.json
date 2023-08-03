@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "aziestarships",
+  "version": "${version}",
+  "name": "AZIE Starships",
+  "description": "A mod that adds Elite-like starships and gameplay mechanics",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/aziestarships/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.azie.aziestarships.client.AZIEStarshipsClient"
+    ],
+    "main": [
+      "org.azie.aziestarships.AZIEStarships"
+    ]
+  },
+  "mixins": [
+    "aziestarships.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
